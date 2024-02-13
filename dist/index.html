@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    @@include('html/head.html', {
-        "title": "Main Page"
-    })
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240213170529"/>
+    <title>Main Page</title>
+</head>
 
 <body>
     <div class="wrapper">
-        @@include('html/header.html')
+        <header class="header">
+                    <div class="container">
+                        <div class="header__row">
+                            <a class="header__brand">
+                                <img src="img/logomark.svg" alt="">
+                                <img src="img/wordmark.svg" alt="">
+                            </a>
+                            <nav class="header__menu menu">
+                                <div class="menu__icon icon-menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="menu__body">
+                                    <ul class="menu__list">
+                                        <li><a href="" class="menu__link">Modellen</a></li>
+                                        <li><a href="" class="menu__link">Kopen</a></li>
+                                        <li><a href="" class="menu__link">Huren</a></li>
+                                        <li><a href="" class="menu__link">Nieuws</a></li>
+                                    </ul>
+                                    <a href="#" class="menu__contact">Contact</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+
+
         <main class="page">
             <section class="main-screen">
                 <div class="main-screen__content content">
                     <div class="content__bg ibg">
-                        <img src="@img/Bitmap.jpg" alt="">
+                        <picture><source srcset="img/Bitmap.webp" type="image/webp"><img src="img/Bitmap.jpg" alt=""></picture>
                     </div>
                     <div class="container">
                         <div class="content__introduction">
@@ -19,7 +49,7 @@
                             <h2 class="content__text">Een ecologisch tiny huisje is zoveel mogelijk opgebouwd uit duurzame natuurlijke materialen</h2>
                         </div>
                         <div class="content__video">
-                            <button class="content__btn"><img src="@img/btnplay.svg" alt=""></button>
+                            <button class="content__btn"><img src="img/btnplay.svg" alt=""></button>
                             <div class="content__video-text">Bekijk de film</div>
                         </div>
                     </div>
@@ -36,10 +66,10 @@
                     </div>
                     <div class="intro__column intro__column_shwc">
                         <div class="slider intro-slider">
-                            <div class="slider__item" data-lazy="@img/itro_1.jpg"><img src="@img/itro_1.jpg" alt=""></div>
-                            <div class="slider__item" data-lazy="@img/itro_1.jpg"><img src="@img/itro_1.jpg" alt=""></div>
-                            <div class="slider__item" data-lazy="@img/itro_1.jpg"><img src="@img/itro_1.jpg" alt=""></div>
-                            <div class="slider__item" data-lazy="@img/itro_1.jpg"><img src="@img/itro_1.jpg" alt=""></div>
+                            <div class="slider__item" data-lazy="img/itro_1.jpg"><picture><source srcset="img/itro_1.webp" type="image/webp"><img src="img/itro_1.jpg" alt=""></picture></div>
+                            <div class="slider__item" data-lazy="img/itro_1.jpg"><picture><source srcset="img/itro_1.webp" type="image/webp"><img src="img/itro_1.jpg" alt=""></picture></div>
+                            <div class="slider__item" data-lazy="img/itro_1.jpg"><picture><source srcset="img/itro_1.webp" type="image/webp"><img src="img/itro_1.jpg" alt=""></picture></div>
+                            <div class="slider__item" data-lazy="img/itro_1.jpg"><picture><source srcset="img/itro_1.webp" type="image/webp"><img src="img/itro_1.jpg" alt=""></picture></div>
                         </div>
                     </div>
                 </div>
@@ -57,7 +87,7 @@
                 <div class="container">
                     <div class="feature__row">
                         <div class="feature__column feature__column_pic">
-                            <img src="@img/adv_1.jpg" alt="house-pic">
+                            <picture><source srcset="img/adv_1.webp" type="image/webp"><img src="img/adv_1.jpg" alt="house-pic"></picture>
                         </div>
                         <div class="feature__column feature__column_ftr">
                             <div class="feature__item item">
@@ -89,8 +119,21 @@
                 </div>
             </section>
         </main>
-        @@include('html/footer.html')
+        <footer class="footer">
+    <div class="footer__row">
+        <a href="#" class="footer__column footer__column_contact">info@eco-cabins.com</a>
+        <a href="#" class="footer__column footer__column_brand">
+            <img src="img/logomark.svg" alt="logomark">
+            <img src="img/wordmark.svg" alt="wordmark">
+        </a>
+        <div class="footer__column footer__column_policy">
+            <a href="#" class="footer__cookies">Cookies</a>
+            <a href="#" class="footer__privacy">Privacybeleid</a>
+        </div>
     </div>
-    <script src="js/app.min.js"></script>
+
+</footer>
+    </div>
+    <script src="js/app.min.js?_v=20240213170529"></script>
 </body>
 </html>

@@ -1,0 +1,66 @@
+.contactPopup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    z-index: 10;
+
+    &__body{
+        border-radius: 5px;
+        background-color: $greys---white;
+        width: 300px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    &__form{
+        margin: 20px 0 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__field{
+        border: 1px solid $color---dark-green;
+        color: $color---dark-green;
+        padding: 10px 20px;
+        &:focus{
+            outline: none
+        }
+    }
+    &__name{
+        margin-bottom: 10px;
+    }
+    &__tel{
+
+    }
+    &__sumbit{
+        margin: 20px 0 0 0;
+        border-radius: 4px;
+        width: 90px;
+        height: 34px;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        color: $greys---white;
+        line-height: 34px;
+        background-color: $greys---light-grey;
+        cursor: pointer;
+    }
+
+    &__contactUs{
+        text-align: center;
+        line-height: 24px;
+        b{
+            color: $color---dark-green;
+        }
+    }
+}
